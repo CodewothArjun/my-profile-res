@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile-Arjun</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./assets/arjunneww.png" type="image/x-icon">
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- JS For Email -->
+    <script src="emailVal.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "S9_0y16_XC25ZX3JS",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <nav id="desktop-nav">
+        <a class="logo" href="#">Arjun Mijar</a>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Arjun Mijar</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img class="arjunImg" src="./assets/arjunneww.png" alt="Picture of Arjun" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, It's me</p>
+            <h1 class="title">Arjun Mijar</h1>
+            <p class="section__text__p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/ARJUN-ROKKA-cv.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <a href="https://github.com/CodewothArjun/CodewothArjun"><i
+                        class="fa-brands fa-square-github icons pro-icons"></i></a>
+                <a href="https://www.linkedin.com/in/arjun-rokka9800/"><i
+                        class="fa-brands fa-linkedin icons pro-icons"></i></a>
+                <a href="https://www.facebook.com/arjun.rokka.188"><i
+                        class="fa-brands fa-facebook icons pro-icons"></i></a>
+                <a href="https://twitter.com/Arjun_Rokka9800"><i
+                        class="fa-brands fa-square-twitter icons pro-icons"></i></a>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile.png" alt="Profile picture" class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+                        <h3>Experience</h3>
+                        <p>2+ years <br />Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education icon" class="icon" />
+                        <h3>Education</h3>
+                        <p>B.Sc. Bachelors Degree<br />CSIT</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        +2 Science <br>
+                        BSc.CSIT Running <br>
+                        I am a BSc. CSIT 2nd year student studying at ASCOL. I have completed my SEE and +2 level
+                        studies from
+                        Padmodaya Secondary School. I possess basic skills in front-end web development and have
+                        knowledge of HTML,
+                        CSS, JavaScript, React, C++ and C programming language. I have typing skills in English and
+                        Nepali. I am a
+                        sincere and obedient individual dedicated to completing task or opportunity.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Figma</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Programming Language</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C Program</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Python Program</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>C++ Program</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <img src="./assets/project2.png" alt="Education icon" class="proj-img" />
+                    <h3>Blog Website</h3>
+                    <p>Blogging on love and affection</p>
+                    <div class="proj-btn-container">
+                        <button class="proj-btn"
+                            onclick="location.href=('https://github.com/CodewothArjun/lovetoblogs.git')">Github</button>
+                        <button class="proj-btn"
+                            onclick="location.href=('https://codewotharjun.github.io/lovetoblogs/')">Live
+                            Demo</button>
+                    </div>
+                </div>
+
+                <div class="details-container color-container">
+                    <img src="./assets/project1.png" alt="Education icon" class="proj-img" />
+                    <h3>Profile Site</h3>
+                    <p>Using Tailwind CSS</p>
+                    <div class="proj-btn-container">
+                        <button class="proj-btn"
+                            onclick="location.href=('https://github.com/CodewothArjun/Tailwind-profile?tab=readme-ov-file')">Github</button>
+                        <button class="proj-btn"
+                            onclick="location.href=('https://codewotharjun.github.io/Tailwind-profile//')">Live
+                            Demo</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <img src="./assets/project3.png" alt="Education icon" class="proj-img" />
+                    <h3>Color Flipper</h3>
+                    <p>Color flippers</p>
+                    <div class="proj-btn-container">
+                        <button class="proj-btn"
+                            onclick="location.href=('https://github.com/CodewothArjun/Clone-of-Usabilityhub/tree/main')">Github</button>
+                        <button class="proj-btn"
+                            onclick="location.href=('https://codewotharjun.github.io/Clone-of-Usabilityhub/')">Live
+                            Demo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact'" />
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact</h1>
+        <div class="contact-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <img src="./assets/education.png" alt="Contact icon" class="icon" />
+                    <div>
+                        <h2>Feel Free To Contact</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Contact Form -->
+        <div class="form-container">
+            <div class="left-form">
+                <p>Thank you for visiting my website! If you have any questions, inquiries, or simply want to
+                    get in touch,
+                    please feel free to contact me. I'm always happy to hear from you!</p>
+                <div class="text-container">
+                    <p class="bold">Arjun Mijar</p>
+                    <p>Kathmandu, Nepal</p>
+                    <p>Gmail: arjunrokkha@gmail.com</p>
+                    <p>Phone: 9808900133</p>
+                </div>
+            </div>
+            <div class="right-form">
+                <h1 class="title-form">Contact Form </h1>
+                <div class="form-group">
+                    <h5 for="name" class="Names">Name</h5>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <h5 for="email" class="Names">Email</h5>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <h5 class="Names">Message</h5>
+                    <textarea id="message" class="form-control" rows="5">Your Message</textarea>
+                </div>
+                <button class="btn-primary" onclick="sendEmail()">Submit</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p class="footer-text">Copyright © 2024 Arjun Mijar. All Rights Reserved.</p>
+        <div class="icons" id="contact-icons">
+            <a href="https://github.com/CodewothArjun/CodewothArjun"><i class="fa-brands fa-square-github"></i></a>
+            <a href="https://www.linkedin.com/in/arjun-rokka9800/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/arjun.rokka.188"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/Arjun_Rokka9800"><i class="fa-brands fa-square-twitter"></i></a>
+        </div>
+    </footer>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
