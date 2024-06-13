@@ -79,8 +79,16 @@ nav ul li a:hover {
   justify-content: space-around;
   /* background: #ecf0f1; */
   padding: 2em;
-  background: rgb(181,179,224);
-  background: linear-gradient(90deg, rgba(181,179,224,1) 28%, rgba(122,203,255,1) 44%, rgba(2,161,221,1) 61%, rgba(0,212,255,1) 76%, rgba(178,190,205,1) 100%, rgba(9,9,121,1) 100%);
+  background: rgb(181, 179, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(181, 179, 224, 1) 28%,
+    rgba(122, 203, 255, 1) 44%,
+    rgba(2, 161, 221, 1) 61%,
+    rgba(0, 212, 255, 1) 76%,
+    rgba(178, 190, 205, 1) 100%,
+    rgba(9, 9, 121, 1) 100%
+  );
 }
 
 #profile .section__pic-container img {
@@ -119,11 +127,19 @@ nav ul li a:hover {
 .btn-color-1 {
   background: #2ecc71;
   color: #fff;
+  transition: 0.2s ease-out;
+}
+.btn-color-1:hover {
+  background-color: #000;
 }
 
 .btn-color-2 {
   background: #3498db;
   color: #fff;
+  transition: 0.2s ease-out;
+}
+.btn-color-2:hover {
+  background-color: #000;
 }
 
 .section__text__p1 {
@@ -208,6 +224,9 @@ section .title {
   height: auto;
   margin-bottom: 0.5em;
 }
+.pro-icons:hover {
+  color: #000;
+}
 
 .arrow {
   cursor: pointer;
@@ -244,9 +263,17 @@ section .title {
 }
 
 /* Project section */
-#projects{
-  background: rgb(181,179,224);
-  background: linear-gradient(90deg, rgba(181,179,224,1) 28%, rgba(122,203,255,1) 44%, rgba(2,161,221,1) 61%, rgba(0,212,255,1) 76%, rgba(178,190,205,1) 100%, rgba(9,9,121,1) 100%);
+#projects {
+  background: rgb(181, 179, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(181, 179, 224, 1) 28%,
+    rgba(122, 203, 255, 1) 44%,
+    rgba(2, 161, 221, 1) 61%,
+    rgba(0, 212, 255, 1) 76%,
+    rgba(178, 190, 205, 1) 100%,
+    rgba(9, 9, 121, 1) 100%
+  );
 }
 .proj-btn-container .proj-btn {
   font-weight: normal;
@@ -329,8 +356,16 @@ footer {
   justify-content: space-around;
   flex-wrap: wrap;
   padding: 1.3rem;
-  background: rgb(181,179,224);
-  background: linear-gradient(90deg, rgba(181,179,224,1) 28%, rgba(122,203,255,1) 44%, rgba(2,161,221,1) 61%, rgba(0,212,255,1) 76%, rgba(178,190,205,1) 100%, rgba(9,9,121,1) 100%);
+  background: rgb(181, 179, 224);
+  background: linear-gradient(
+    90deg,
+    rgba(181, 179, 224, 1) 28%,
+    rgba(122, 203, 255, 1) 44%,
+    rgba(2, 161, 221, 1) 61%,
+    rgba(0, 212, 255, 1) 76%,
+    rgba(178, 190, 205, 1) 100%,
+    rgba(9, 9, 121, 1) 100%
+  );
 }
 .footer-text {
   /* padding-bottom: 0.4rem; */
@@ -340,7 +375,9 @@ footer {
   display: flex;
   gap: 8%;
 }
-
+.foot-icon:hover{
+  color: #000;
+}
 /* Responsive styles */
 
 @media (min-width: 769px) {
@@ -550,5 +587,8 @@ footer {
   }
   .pro-icons {
     font-size: 2.3rem;
+  }
+  .section__text__p2 {
+    font-size: 3rem;
   }
 }
